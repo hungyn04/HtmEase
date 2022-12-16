@@ -1,6 +1,7 @@
 :root {
     --bg-main: #eee;
     --text-color-main: #000;
+    --header-height: 15px;
 }
 *::-webkit-scrollbar {
     width: 8px;
@@ -77,29 +78,32 @@ modal {
 header {
     position: fixed;
     width: 100%;
-    background: linear-gradient(rgb(0 0 0 / 45%) 0%, rgb(0 0 0 / 0%) 100%);
+    background: linear-gradient(#36363673 100%, #000 100%) no-repeat;
+    background-position-y: calc( -50px - var(--header-height)*10);
     backdrop-filter: blur(20px);
     z-index: 1;
 }
 .header-logo {
-    height: 45px;
-    padding: 30px 45px 30px 45px;
+    height: calc(var(--header-height) + 35px);
+    max-height: 45px;
+    padding: calc(var(--header-height) + 15px) 45px;
     cursor: pointer;
 }
 .header-link {
     float: right;
-    margin-top: 50px;
+    font-size: calc(var(--header-height)/2 + 18px);
+    margin-top: calc(var(--header-height) + 23px);
 }
 .header-link a {
     font-family: -cubano;
-    font-size: 1.5rem;
+    font-size: 1em;
     color: white;
     text-transform: uppercase;
     padding: 50px 40px 10px 40px;
 }
 .header-bottom-line {
     border-bottom: solid 1px white;
-    width: calc(100vw - 110px);
+    width: calc(100vw - var(--header-height)*10);
     min-width: 70px;
     position: inherit;
     left: 50%;
@@ -160,6 +164,9 @@ footer > img {
     height: 50px;
     cursor: pointer;
 }
+footer > div {
+    padding-right: 80px;
+}
 @media only screen and (max-width: 500px) {
     .header-logo{
         margin-left: 50%;
@@ -168,12 +175,11 @@ footer > img {
     .header-link {
         display: none;
     }
-    .header-logo {
-        transition: all 0.2s;
-    }
 }
 @media only screen and (max-width: 1024px) {
     .banner-text-main {
-        font-size: clamp(30px, 6.5vw, 99999px);
+        font-size: clamp(50px, 6.5vw, 99999px);
+        margin: 0 40px 0 40px;
+        text-align: left;
     }
 }
