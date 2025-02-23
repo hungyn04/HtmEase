@@ -1,20 +1,20 @@
 @font-face {
-    font-family: '-bahn';
-	src: url('/fonts/bahnschrift.ttf')format('truetype');
+  font-family: "-bahn";
+  src: url("./fonts/bahnschrift.ttf") format("truetype");
 }
 @font-face {
-    font-family: '-brandon';
-	src: url('/fonts/brandontext.ttf')format('truetype');
+  font-family: "-brandon";
+  src: url("./fonts/brandontext.ttf") format("truetype");
 }
 @font-face {
-    font-family: '-brushup';
-	src: url('/fonts/brushup.ttf')format('truetype');
+  font-family: "-brushup";
+  src: url("./fonts/brushup.ttf") format("truetype");
 }
 @font-face {
-    font-family: '-consolas';
-	src: url('/fonts/consolas.ttf')format('truetype');
+  font-family: "-consolas";
+  src: url("./fonts/consolas.ttf") format("truetype");
 }
 @font-face {
-    font-family: '-cubano';
-	src: url('/fonts/cubano.ttf')format('truetype');
+  font-family: "-cubano";
+  src: url("./fonts/cubano.ttf") format("truetype");
 }
